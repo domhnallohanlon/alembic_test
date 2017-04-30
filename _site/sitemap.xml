@@ -27,7 +27,4 @@
 <url>
 <loc>http://localhost:4000/search/</loc>
 </url>
-<url>
-<loc>http://localhost:4000/blog/page2/</loc>
-</url>
 </urlset>
