@@ -27,7 +27,7 @@ gems:
 - jekyll-feed
 - jemoji
 
-theme: alembic-jekyll-theme
+#theme: alembic-jekyll-theme
 
 # 3. Gem settings
 paginate: 5 # jekyll-paginate > items per page
