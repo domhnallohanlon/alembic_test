@@ -1,30 +1,28 @@
 {% if paginator.posts %}
 
-	<section class="section  typeset">
-		<ul class="list  list--posts">
-			{% for page in paginator.posts %}
-				<li class="item  item--post">
-					<article class="article  article--post">
+	<ul class="list  list--posts">
+		{% for page in paginator.posts %}
+			<li class="item  item--post">
+				<article class="article  article--post  typeset">
 
-						<h2><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h2>
-						{% include post-meta.html %}
-						{{ page.excerpt | markdownify | truncatewords: 60 }}
+					<h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					{% include post-meta.html %}
+					{{ page.excerpt | markdownify | truncatewords: 60 }}
 
-					</article>
-				</li>
-			{% endfor %}
-		</ul>
-		{% include post-pagination.html %}
-	</section>
+				</article>
+			</li>
+		{% endfor %}
+	</ul>
+	{% include post-pagination.html %}
 
 {% else %}
-	<h3>Latest blog posts</h3>
+	<h2>Read stories</h2>
 	<ul class="list  list--posts">
 		{% for page in site.posts limit: 4 %}
 			<li class="item  item--post">
-				<article class="article  article--post">
+				<article class="article  article--post  typeset">
 
-					<h4><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h4>
+					<h5><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h5>
 					{% include post-meta.html %}
 					{{ page.excerpt | markdownify | truncatewords: 60 }}
 

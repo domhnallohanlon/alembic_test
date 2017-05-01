@@ -8,14 +8,11 @@
 			<meta name="robots" content="noindex">
 		{% endif %}
 
-		{% if page.collectionpage %}
+		{% if page.collection %}
 			{% seo title=false %}
 
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+			{% assign collectiondata = site.collections | where: "label", page.collection | first %}
 			<title>{{ collectiondata.title }} - {{ site.title }}</title>
-			<meta property="og:title" content="{{ collectiondata.title }}">
-			<meta name="description" content="{{ collectiondata.description }}">
-			<meta property="og:description" content="{{ collectiondata.description }}">
 		{% else %}
 			{% seo %}
 		{% endif %}
@@ -24,7 +21,7 @@
 
 		{% include site-favicons.html %}
 	</head>
-	<body class="layout-{{ page.layout }}  {{ page.title | slugify }}">
+	<body>
 		{% include site-icons.svg %}
 
 		{{ content }}

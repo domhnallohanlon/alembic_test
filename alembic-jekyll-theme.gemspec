@@ -2,13 +2,14 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alembic-jekyll-theme"
-  spec.version       = "1.5.3"
+  spec.version       = "1.0.0"
   spec.authors       = ["David Darnes"]
   spec.email         = ["me@daviddarnes.com"]
 
   spec.summary       = %q{A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.}
-  spec.description   = "A Jekyll boilerplate theme designed to be a starting point for any Jekyll website. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately."
-  spec.homepage      = "https://alembic.darn.es"
+  spec.description   = "Want to pen down your thoughts on Science, Genomics or Writing?
+Drop an e-mail or tweet me. We will develop your ideas into complete article."
+  spec.homepage      = "https://venuthatikonda.github.io"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }

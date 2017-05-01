@@ -16,6 +16,7 @@ exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
+- demo/*
 - alembic-jekyll-theme.gemspec
 
 # 2. Installed Gems
@@ -28,23 +29,21 @@ gems:
 - jekyll-feed
 - jemoji
 
-#theme: alembic-jekyll-theme
-
 # 3. Gem settings
 paginate: 5 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
+username: domhnallohanlon	 # jekyll-seo-tag > Owners twitter username
+author: domhnallohanlon		# jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
-  name: David Darnes # jekyll-seo-tag > real name
+  name: Domhnall O'Hanlon # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/DavidDarnes
-    - https://www.facebook.com/daviddarnes
-    - https://www.linkedin.com/in/daviddarnes
-    - https://plus.google.com/+DavidDarnes
-    - https://github.com/daviddarnes
+    - https://twitter.com/domhnallohanlon
+#    - https://www.facebook.com/daviddarnes
+#    - https://www.linkedin.com/in/daviddarnes
+#    - https://plus.google.com/+DavidDarnes
+    - https://github.com/domhnallohanlon
 
 # 4. Jekyll settings
 sass:
@@ -71,23 +70,28 @@ defaults:
       type: pages
     values:
       layout: page # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
+      image: "/assets/log.jpg" # Default image for sharing
   -
     scope:
       path: ""
       type: posts
     values:
       layout: post # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
+      image: "/assets/log.jpg" # Default image for sharing
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-title: "Alembic" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/placeholder-logo.png" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "http://domhnallohanlon.com/alembic_test" # Site url, also used in jekyll-seo-tag
-#repo: "https://domhnallohanlon.github.io/alembic_test"
+title: "Genome Diary" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/log.jpg" # Site logo, also used in jekyll-seo-tag
+description: "Want to pen down your thoughts on Science, Genomics or Writing?
+Drop an e-mail or tweet me. We will develop your ideas into complete article." # Site description and default description, also used in jekyll-seo-tag
+
+url: "https://domhnallohanlon.github.io/alembic_test" # Site url, also used in jekyll-seo-tag
+#repo: "https://github.com/daviddarnes/alembic"
 #email: "me@daviddarnes.com"
+#disqus: "alembic-1"
+
+avatarurl: "https://secure.gravatar.com/avatar/077d1756d4740e51c12baf1301e8a257?s=800&d=identicon"
 #avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
@@ -95,27 +99,14 @@ navigation_header:
   Home: /
   Elements: /elements/
   Blog: /blog/
-  Categories: /categories/
-  Search: /search/
-  
-navigation_footer:
-  Created by David Darnes: https://darn.es
+#  Fork Alembic: https://github.com/daviddarnes/alembic
+
+#navigation_footer:
+#  Created by David Darnes: https://darn.es
 
 social_links:
-  Twitter: https://twitter.com/DavidDarnes
-  LinkedIn: https://www.linkedin.com/in/daviddarnes
-  Google+: https://plus.google.com/+DavidDarnes
-  GitHub: https://github.com/daviddarnes
-  link: https://darn.es
-
-sharing_links:
-  Twitter: "#1DA1F2"
-  facebook: "#3B5998"
-  Google+: "#DC4E41"
-  Pinterest: "#BD081C"
-  LinkedIn: "#0077B5"
-  tumblr: "#36465D"
-  Reddit: "#FF4500"
-  Hacker News: "#ff6600"
-  Designer News: "#2D72D9"
-  Email: ""
+  Twitter: https://twitter.com/domhnallohanlon
+#  LinkedIn: https://www.linkedin.com/in/daviddarnes
+#  GooglePlus: https://plus.google.com/+DavidDarnes
+  GitHub: https://github.com/domhnallohanlon
+#  link: https://darn.es
