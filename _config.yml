@@ -28,7 +28,7 @@ gems:
 - jekyll-feed
 - jemoji
 
-theme: alembic-jekyll-theme
+#theme: alembic-jekyll-theme
 
 # 3. Gem settings
 paginate: 5 # jekyll-paginate > items per page
@@ -85,7 +85,7 @@ encoding: utf-8 # Make sure the encoding is right
 title: "Alembic" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/placeholder-logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://github.io/domhnallohanlon/alembic_test" # Site url, also used in jekyll-seo-tag
+url: "http://domhnallohanlon.com/alembic_test" # Site url, also used in jekyll-seo-tag
 #repo: "https://domhnallohanlon.github.io/alembic_test"
 #email: "me@daviddarnes.com"
 #avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
